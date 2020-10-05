@@ -50,7 +50,7 @@ public class Darts {
         double mean = sum/length;
 
         for(double num: sdArgs) {
-            standardDeviation += Math.pow(num - mean, 2);
+            standardDeviation += (num - mean) * (num - mean);
         }
 
         return Math.sqrt(standardDeviation/length);
